@@ -1,1 +1,4 @@
-# DFC_Recruit
+```bash
+$ pnpm install
+$ pnpm run dev
+```
