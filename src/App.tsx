@@ -1,35 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
+import SectionObserver from "./components/sectionObserver";
 import { MainPage } from "./pages/MainPage";
 import { IntroPage } from "./pages/IntroPage";
 import { ExternalActivityPage } from "./pages/ExternalActivityPage";
-import { RegularActivityPage } from "./pages/RegularActivitiesPage"; // RegularActivityPage import
-import { QnaPage } from "./pages/QnaPage";
+import { RegularActivityPage } from "./pages/RegularActivitiesPage";
+import { FaqPage } from "./pages/FaqPage";
 import { RecruitPage } from "./pages/RecruitPage";
-import "./App.css"; // CSS 파일 import
+import "./App.css";
 
 function App() {
+    const [currentSectionId, setCurrentSectionId] = useState("");
+
     return (
         <div className='App'>
-            <Header />
-            <div id='main' className='container'>
+            <Header currentSectionId={currentSectionId} />
+            <SectionObserver setCurrentSectionId={setCurrentSectionId} />
+            <section id='main' className='container'>
                 <MainPage />
-            </div>
-            <div id='intro' className='container'>
+            </section>
+            <section id='intro' className='container'>
                 <IntroPage />
-            </div>
-            <div id='external' className='container'>
+            </section>
+            {/* <section id='external' className='container'>
                 <ExternalActivityPage />
-            </div>
-            <div id='regular' className='container'>
+            </section> */}
+            <section id='regular' className='container'>
                 <RegularActivityPage />
-            </div>
-            <div id='qna' className='container'>
-                <QnaPage />
-            </div>
-            <div id='recruit' className='container'>
+            </section>
+            <section id='faq' className='container'>
+                <FaqPage />
+            </section>
+            <section id='recruit' className='container'>
                 <RecruitPage />
-            </div>
+            </section>
         </div>
     );
 }

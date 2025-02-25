@@ -13,7 +13,6 @@ export const Header = styled.header`
     align-items: center;
     justify-content: space-between;
     height: 70px;
-    background-color: #e1eaf4;
     z-index: 1000;
 
     @media (max-width: 768px) {
@@ -63,10 +62,9 @@ export const NavLink = styled.li<{ active?: boolean }>`
 
     a {
         text-decoration: none;
-        color: inherit;
 
         &:hover {
-            font-size: 24px;
+            font-weight: 700;
         }
     }
 `;

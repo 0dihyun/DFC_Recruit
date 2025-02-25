@@ -9,14 +9,6 @@ export const MainCont = styled.div`
     padding-left: 100px;
     padding-top: 70px;
 
-    @media (max-width: 768px) {
-        height: calc(80vh - 60px);
-        padding-left: 50px;
-        padding-top: 60px;
-        align-items: flex-start;
-        justify-content: center;
-    }
-
     @media (max-width: 480px) {
         height: calc(80vh - 50px);
         padding-left: 20px;
@@ -30,45 +22,30 @@ export const SubCont = styled.div`
     padding-bottom: 20px;
     align-self: flex-start;
 
-    @media (max-width: 768px) {
-        padding-bottom: 10px;
-        align-self: flex-start;
-    }
-
     @media (max-width: 480px) {
-        padding-bottom: 5px;
+        padding-bottom: 18px;
         align-self: flex-start;
     }
 `;
 
 export const SchoolNameCont = styled.p`
-    font-size: 25px;
+    font-size: 50px;
     font-weight: 500;
     align-self: flex-start;
 
-    @media (max-width: 768px) {
-        font-size: 20px;
-        align-self: flex-start;
-    }
-
     @media (max-width: 480px) {
-        font-size: 18px;
+        font-size: 30px;
         align-self: flex-start;
     }
 `;
 
 export const RecruitCont = styled.p`
     font-weight: 700;
-    font-size: 50px;
+    font-size: 60px;
     align-self: flex-start;
 
-    @media (max-width: 768px) {
-        font-size: 35px;
-        align-self: flex-start;
-    }
-
     @media (max-width: 480px) {
-        font-size: 30px;
+        font-size: 40px;
         align-self: flex-start;
     }
 `;
@@ -77,13 +54,8 @@ export const DdayCont = styled.p`
     padding-bottom: 20px;
     align-self: flex-start;
 
-    @media (max-width: 768px) {
-        padding-bottom: 10px;
-        align-self: flex-start;
-    }
-
     @media (max-width: 480px) {
-        padding-bottom: 5px;
+        padding-bottom: 18px;
         align-self: flex-start;
     }
 `;

@@ -25,10 +25,20 @@ export const MainCont = styled.div`
     }
 `;
 
-export const SubCont = styled.div``;
+export const SubCont = styled.div`
+    display: flex;
+`;
 
-export const CyberGuadiansTitleCont = styled.h1``;
-export const CyberGuadiansCommentCont = styled.p``;
+export const CGCont = styled.div``;
+export const CyberGuardiansTitleCont = styled.p`
+    font-size: 50px;
+    font-weight: 700;
+`;
+export const CyberGuardiansSubTitleCont = styled.p``;
+export const CyberGuardiansCommentCont = styled.p``;
+export const CGLogo = styled.img``;
 
-export const OneTeamOneCompanyTitleCont = styled.h1``;
+export const OTOCCont = styled.div``;
+export const OneTeamOneCompanyTitleCont = styled.p``;
+export const OneTeamOneCompanySubTitleCont = styled.p``;
 export const OneTeamOneCompanyCommentCont = styled.p``;

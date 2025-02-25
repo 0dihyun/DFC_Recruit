@@ -1,21 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import * as S from "./styled";
 import DFC_LOGO from "../../assets/img/DFC_LOGO.png";
 
-const Header = () => {
-    const [activeLink, setActiveLink] = useState<string>(""); // 활성화된 링크 상태
-
-    const scrollToSection = (id: string) => {
+const Header = ({ currentSectionId }: any) => {
+    const scrollToSection = (id: any) => {
         const element = document.getElementById(id);
         if (element) {
-            element.scrollIntoView({ behavior: "smooth", block: "start" }); // block: "start" 추가
-            setActiveLink(id);
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
         }
     };
 
     const handleLogoClick = () => {
         scrollToSection("main");
-        setActiveLink(""); // 로고 클릭 시 모든 링크 초기화
     };
 
     return (
@@ -27,26 +23,50 @@ const Header = () => {
             </S.LogoCont>
             <S.NavCont>
                 <S.Ul>
-                    <S.NavLink active={activeLink === "intro"}>
-                        <a href='#' onClick={() => scrollToSection("intro")}>
+                    <S.NavLink active={currentSectionId === "intro"}>
+                        <a
+                            href='#'
+                            onClick={(e) => {
+                                e.preventDefault();
+                                scrollToSection("intro");
+                            }}
+                        >
                             동아리 소개
                         </a>
                     </S.NavLink>
                     <S.Separator>|</S.Separator>
-                    <S.NavLink active={activeLink === "external"}>
-                        <a href='#' onClick={() => scrollToSection("external")}>
-                            포렌식 일지
+                    <S.NavLink active={currentSectionId === "external" || currentSectionId === "regular"}>
+                        <a
+                            href='#'
+                            onClick={(e) => {
+                                e.preventDefault();
+                                scrollToSection("regular");
+                            }}
+                        >
+                            동아리 활동
                         </a>
                     </S.NavLink>
                     <S.Separator>|</S.Separator>
-                    <S.NavLink active={activeLink === "qna"}>
-                        <a href='#' onClick={() => scrollToSection("qna")}>
-                            QnA
+                    <S.NavLink active={currentSectionId === "faq"}>
+                        <a
+                            href='#'
+                            onClick={(e) => {
+                                e.preventDefault();
+                                scrollToSection("faq");
+                            }}
+                        >
+                            FAQ
                         </a>
                     </S.NavLink>
                     <S.Separator>|</S.Separator>
-                    <S.NavLink active={activeLink === "recruit"}>
-                        <a href='#' onClick={() => scrollToSection("recruit")}>
+                    <S.NavLink active={currentSectionId === "recruit"}>
+                        <a
+                            href='#'
+                            onClick={(e) => {
+                                e.preventDefault();
+                                scrollToSection("recruit");
+                            }}
+                        >
                             지원하기
                         </a>
                     </S.NavLink>

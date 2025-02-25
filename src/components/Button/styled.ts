@@ -4,9 +4,9 @@ export const MainCont = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 220px;
-    height: 50px;
-    border-radius: 15px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
     background-color: #1c334f;
 
     /* 반응형 스타일 */
@@ -22,8 +22,8 @@ export const MainCont = styled.button`
 `;
 
 export const RecruitCont = styled.p`
-    font-weight: 400;
-    font-size: 25px;
+    font-weight: 600;
+    font-size: 15px;
     color: white;
 
     /* 반응형 스타일 */
