@@ -1,15 +1,3 @@
-/* .App {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-}
-
-.container {
-    height: 100vh;
-    scroll-snap-align: start;
-    scroll-behavior: smooth;
-} */
-
 .App {
     height: 100vh;
     overflow-y: scroll;

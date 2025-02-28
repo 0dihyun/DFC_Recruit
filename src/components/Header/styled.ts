@@ -15,23 +15,12 @@ export const Header = styled.header`
     height: 70px;
     z-index: 1000;
 
-    @media (max-width: 768px) {
-        padding-left: 50px;
-        padding-right: 50px;
-        height: 60px;
-    }
-
     @media (max-width: 480px) {
-        padding-left: 20px;
-        padding-right: 20px;
-        height: 50px;
-        display: flex;
-        justify-content: left;
+        padding: 20px;
     }
 `;
 
 export const NavCont = styled.nav`
-    display: flex;
     @media (max-width: 480px) {
         display: none;
     }
@@ -45,10 +34,6 @@ export const Ul = styled.ul`
     display: flex;
     align-items: center;
     gap: 30px;
-
-    @media (max-width: 768px) {
-        gap: 20px;
-    }
 
     @media (max-width: 480px) {
         gap: 10px;

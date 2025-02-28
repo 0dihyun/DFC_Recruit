@@ -6,13 +6,11 @@ export const MainCont = styled.div`
     align-items: flex-start;
     justify-content: center;
     height: calc(100vh - 70px);
-    padding-left: 100px;
-    padding-top: 70px;
+    padding: 100px;
 
     @media (max-width: 480px) {
-        height: calc(80vh - 50px);
-        padding-left: 20px;
-        padding-top: 50px;
+        height: calc(100vh - 50px);
+        padding: 20px;
         align-items: flex-start;
         justify-content: center;
     }
@@ -35,6 +33,7 @@ export const SchoolNameCont = styled.p`
 
     @media (max-width: 480px) {
         font-size: 30px;
+        font-weight: 600;
         align-self: flex-start;
     }
 `;
@@ -45,7 +44,7 @@ export const RecruitCont = styled.p`
     align-self: flex-start;
 
     @media (max-width: 480px) {
-        font-size: 40px;
+        font-size: 35px;
         align-self: flex-start;
     }
 `;

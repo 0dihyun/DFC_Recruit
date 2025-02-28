@@ -37,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     ::-webkit-scrollbar {
-    width: 0; /* 스크롤바의 너비를 0으로 설정 */
+    width: 0;
     }
     
 `;

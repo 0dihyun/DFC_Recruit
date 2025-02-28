@@ -17,7 +17,7 @@ const Header = ({ currentSectionId }: any) => {
     return (
         <S.Header>
             <S.LogoCont>
-                <a href='/#' onClick={handleLogoClick}>
+                <a href='#' onClick={handleLogoClick}>
                     <img src={DFC_LOGO} width={50} alt='DFC Logo' />
                 </a>
             </S.LogoCont>

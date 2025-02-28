@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
-import SectionObserver from "./components/sectionObserver";
+import SectionObserver from "./components/SectionObserver";
 import { MainPage } from "./pages/MainPage";
 import { IntroPage } from "./pages/IntroPage";
-import { ExternalActivityPage } from "./pages/ExternalActivityPage";
+// import { ExternalActivityPage } from "./pages/ExternalActivityPage";
 import { RegularActivityPage } from "./pages/RegularActivitiesPage";
 import { FaqPage } from "./pages/FaqPage";
 import { RecruitPage } from "./pages/RecruitPage";
