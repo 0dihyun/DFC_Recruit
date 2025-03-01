@@ -1,5 +1,4 @@
-import React from "react";
-import * as S from "./styled"; // styled.ts에서 스타일 가져오기
+import * as S from "./styled";
 
 const FAQItem = ({ question, answer, isOpen, onToggle }: any) => {
     return (

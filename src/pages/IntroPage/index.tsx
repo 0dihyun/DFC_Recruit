@@ -1,4 +1,3 @@
-import React from "react";
 import AllIImg from "../../assets/img/All.png";
 import * as S from "./styled";
 

@@ -1,5 +1,3 @@
-import React from "react";
-
 import Img from "../../assets/img/All.png";
 
 import * as S from "./styled";

@@ -1,5 +1,3 @@
-import React from "react";
-
 import CGLogo from "../../assets/img/CyberGuardians_LOGO.png";
 
 import * as S from "./styled";

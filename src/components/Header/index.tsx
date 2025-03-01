@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import * as S from "./styled";
 import DFC_LOGO from "../../assets/img/DFC_LOGO.png";
 
