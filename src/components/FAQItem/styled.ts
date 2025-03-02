@@ -6,7 +6,6 @@ export const FAQContainer = styled.div`
     overflow: hidden;
     @media (max-width: 480px) {
         margin-top: 2px;
-        margin-bottom: 2px;
     }
 `;
 
