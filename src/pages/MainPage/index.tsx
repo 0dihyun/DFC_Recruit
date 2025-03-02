@@ -8,11 +8,14 @@ export const MainPage: React.FC = () => {
         <>
             <S.MainCont>
                 <S.SubCont>
-                    <S.SchoolNameCont>한세사이버보안고등학교</S.SchoolNameCont>
-                    <S.RecruitCont>디지털 포렌식 부원 모집</S.RecruitCont>
+                    <S.ItemCont>
+                        <S.SchoolNameCont>한세사이버보안고등학교</S.SchoolNameCont>
+                        <S.RecruitCont>디지털 포렌식 부원 모집</S.RecruitCont>
+                    </S.ItemCont>
+                    <S.DdayCont>2025. xx. xx(x) ~ 2025. xx. xx(x)</S.DdayCont>
+                    <Button />
                 </S.SubCont>
-                <S.DdayCont>2025. xx. xx(x) ~ 2025. xx. xx(x)</S.DdayCont>
-                <Button />
+                <S.ArrowCont>↑</S.ArrowCont>
             </S.MainCont>
         </>
     );

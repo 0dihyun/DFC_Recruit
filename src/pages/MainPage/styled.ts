@@ -4,19 +4,24 @@ export const MainCont = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-end;
     height: calc(100vh - 70px);
     padding: 100px;
 
     @media (max-width: 480px) {
         height: calc(100vh - 50px);
         padding: 20px;
-        align-items: flex-start;
-        justify-content: center;
     }
 `;
 
 export const SubCont = styled.div`
+    padding-bottom: 100px;
+    @media (max-width: 480px) {
+        padding-bottom: 70%;
+    }
+`;
+
+export const ItemCont = styled.div`
     padding-bottom: 20px;
     align-self: flex-start;
 
@@ -56,5 +61,26 @@ export const DdayCont = styled.p`
     @media (max-width: 480px) {
         padding-bottom: 18px;
         align-self: flex-start;
+    }
+`;
+
+export const ArrowCont = styled.p`
+    display: none;
+
+    @media (max-width: 480px) {
+        font-size: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        animation: fadeInOut 1.5s infinite alternate;
+    }
+
+    @keyframes fadeInOut {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 `;
