@@ -5,7 +5,8 @@ export const FAQContainer = styled.div`
     border-radius: 15px;
     overflow: hidden;
     @media (max-width: 480px) {
-        margin-top: 30px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 `;
 

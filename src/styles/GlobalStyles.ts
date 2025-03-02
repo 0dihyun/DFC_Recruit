@@ -32,6 +32,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     img {
+        border-radius: 15px;
         max-width: 100%;
         height: auto;
     }

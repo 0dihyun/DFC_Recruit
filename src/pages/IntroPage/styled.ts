@@ -30,16 +30,17 @@ export const CommentCont = styled.p`
     font-size: 40px;
 
     @media (max-width: 480px) {
-        font-size: 24px;
+        font-weight: 600;
+        font-size: 23px;
     }
 `;
 
 export const ClubNameCont = styled.p`
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 900;
 
     @media (max-width: 480px) {
-        font-size: 24px;
+        font-size: 28px;
     }
 `;
 
