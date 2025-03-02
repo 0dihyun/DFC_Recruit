@@ -1,4 +1,5 @@
 import * as S from "./styled";
+import { googleForm } from "../../constants/googleForm";
 
 export const RecruitPage = () => {
     return (
@@ -7,7 +8,7 @@ export const RecruitPage = () => {
                 <S.Title>디지털 포렌식</S.Title>
                 <S.Title>121기 함께하려면</S.Title>
                 <S.Title>
-                    <S.Highlight href='https://google.com' target='_blank'>
+                    <S.Highlight href={googleForm} target='_blank'>
                         여기
                     </S.Highlight>
                     를 눌러 신청하기
