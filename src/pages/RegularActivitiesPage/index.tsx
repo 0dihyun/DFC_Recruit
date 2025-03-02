@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { IMG1, IMG2, IMG3, IMG4, IMG5, IMG6, IMG7, IMG8, IMG9 } from "../../assets/img"; // 여러 이미지들 추가
+import { IMG1, IMG2, IMG3, IMG4, IMG5, IMG6, IMG7, IMG8, IMG9 } from "../../assets"; // 여러 이미지들 추가
 import * as S from "./styled";
 
 export const RegularActivityPage = () => {
@@ -7,19 +7,16 @@ export const RegularActivityPage = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [isTransitioning, setIsTransitioning] = useState(true);
 
-    // 슬라이드 변경 함수 (다음 이미지)
     const nextSlide = () => {
         setIsTransitioning(true);
         setCurrentImageIndex((prevIndex) => {
-            // 마지막 이미지에서 바로 이전 이미지로 슬라이드
             if (prevIndex === images.length - 1) {
-                return prevIndex - 1; // 마지막에서 1장 뒤로
+                return prevIndex - 1;
             }
-            return prevIndex + 1; // 그 외의 경우에는 다음 이미지로
+            return prevIndex + 1;
         });
     };
 
-    // 3초마다 자동 슬라이드 변경
     useEffect(() => {
         const interval = setInterval(nextSlide, 3000);
         return () => clearInterval(interval);
@@ -38,8 +35,6 @@ export const RegularActivityPage = () => {
                 <S.CommnetCont>포렌식 툴 사용법, vscode 등등 이것저것 와이어샤크 뭐시기</S.CommnetCont>
                 <S.CommnetCont>포렌식 툴 사용법, vscode 등등 이것저것 와이어샤크 뭐시기</S.CommnetCont>
             </S.SubCont>
-
-            {/* 슬라이드 컨테이너 */}
             <S.SliderCont>
                 <S.Slides
                     style={{
@@ -48,7 +43,6 @@ export const RegularActivityPage = () => {
                         transform: `translateX(-${currentImageIndex * 100}%)`,
                     }}
                 >
-                    {/* 이미지 슬라이드 */}
                     {images.map((img, index) => (
                         <S.ImgCont key={index} src={img} width={600} />
                     ))}

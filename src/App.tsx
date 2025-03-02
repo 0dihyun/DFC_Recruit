@@ -1,12 +1,7 @@
 import { useState } from "react";
 import Header from "./components/Header";
 import SectionObserver from "./components/SectionObserver";
-import { MainPage } from "./pages/MainPage";
-import { IntroPage } from "./pages/IntroPage";
-// import { ExternalActivityPage } from "./pages/ExternalActivityPage";
-import { RegularActivityPage } from "./pages/RegularActivitiesPage";
-import { FaqPage } from "./pages/FaqPage";
-import { RecruitPage } from "./pages/RecruitPage";
+import { MainPage, IntroPage, RegularActivityPage, FaqPage, RecruitPage } from "./pages";
 import "./App.css";
 
 function App() {

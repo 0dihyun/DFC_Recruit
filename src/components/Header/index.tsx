@@ -1,5 +1,5 @@
 import * as S from "./styled";
-import DFC_LOGO from "../../assets/img/DFC_LOGO.png";
+import DFC_LOGO from "../../assets/DFC_LOGO2.svg";
 
 const Header = ({ currentSectionId }: any) => {
     const scrollToSection = (id: any) => {

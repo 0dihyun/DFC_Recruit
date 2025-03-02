@@ -10,18 +10,12 @@ export const MainCont = styled.button`
     background-color: #1c334f;
 
     @media (max-width: 480px) {
-        width: 150px;
         height: 40px;
     }
 `;
 
 export const RecruitCont = styled.p`
     font-weight: 500;
-    font-size: 17px;
+    font-size: 18px;
     color: white;
-
-    @media (max-width: 480px) {
-        font-weight: 500;
-        font-size: 18px;
-    }
 `;
