@@ -9,7 +9,6 @@ export const MainCont = styled.div`
     justify-content: center;
 
     @media (max-width: 480px) {
-        height: calc(100vh - 50px);
         flex-direction: column;
         padding: 20px;
     }
