@@ -17,7 +17,7 @@ export const MainCont = styled.div`
 export const SubCont = styled.div`
     padding-bottom: 100px;
     @media (max-width: 480px) {
-        padding-bottom: 70%;
+        padding-bottom: 60%;
     }
 `;
 
@@ -72,6 +72,7 @@ export const ArrowCont = styled.p`
         width: 100%;
         display: flex;
         justify-content: center;
+        padding-bottom: 10%;
         animation: fadeInOut 1.5s infinite alternate;
     }
 
