@@ -1,7 +1,9 @@
 import * as S from "./styled";
 import DFC_LOGO from "../../assets/DFC_LOGO2.svg";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Header = ({ currentSectionId }: any) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const scrollToSection = (id: any) => {
         const element = document.getElementById(id);
         if (element) {

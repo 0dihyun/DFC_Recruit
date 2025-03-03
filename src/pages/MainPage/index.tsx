@@ -15,7 +15,7 @@ export const MainPage: React.FC = () => {
                     <S.DdayCont>2025. xx. xx(x) ~ 2025. xx. xx(x)</S.DdayCont>
                     <Button />
                 </S.SubCont>
-                <S.ArrowCont>↑</S.ArrowCont>
+                <S.ArrowCont>↓</S.ArrowCont>
             </S.MainCont>
         </>
     );
