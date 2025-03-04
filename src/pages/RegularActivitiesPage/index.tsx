@@ -1,26 +1,28 @@
 import { useState, useEffect } from "react";
-import { IMG1, IMG2, IMG3, IMG4, IMG5, IMG6, IMG7, IMG8, IMG9 } from "../../assets"; // 여러 이미지들 추가
+import { IMG1, IMG2, IMG3, IMG4, IMG5, IMG6, IMG7, IMG8, IMG9 } from "../../assets";
 import * as S from "./styled";
 
 export const RegularActivityPage = () => {
     const images = [IMG1, IMG2, IMG3, IMG4, IMG5, IMG6, IMG7, IMG8, IMG9];
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [isTransitioning, setIsTransitioning] = useState(true);
-
-    const nextSlide = () => {
-        setIsTransitioning(true);
-        setCurrentImageIndex((prevIndex) => {
-            if (prevIndex === images.length - 1) {
-                return prevIndex - 1;
-            }
-            return prevIndex + 1;
-        });
-    };
+    const [direction, setDirection] = useState(1);
 
     useEffect(() => {
+        const nextSlide = () => {
+            setIsTransitioning(true);
+            setCurrentImageIndex((prevIndex) => {
+                let newDirection = direction;
+                if (prevIndex === images.length - 1) newDirection = -1;
+                if (prevIndex === 0) newDirection = 1;
+                setDirection(newDirection);
+                return prevIndex + newDirection;
+            });
+        };
+
         const interval = setInterval(nextSlide, 3000);
         return () => clearInterval(interval);
-    }, []);
+    }, [direction, images.length]);
 
     return (
         <S.MainCont>

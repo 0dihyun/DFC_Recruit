@@ -30,6 +30,8 @@ export const ExplainCont = styled.div`
 `;
 
 export const ImgCont = styled.img`
+    width: 100%;
+    height: auto;
     @media (max-width: 480px) {
         width: 100%;
         height: auto;
@@ -37,23 +39,23 @@ export const ImgCont = styled.img`
 `;
 
 export const CommnetCont = styled.p`
-    font-size: 20px;
+    font-size: 1.5rem;
     @media (max-width: 480px) {
-        font-size: 15px;
+        font-size: 0.9rem;
     }
 `;
 
 export const TitleCont = styled.p`
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2.5rem;
 
     @media (max-width: 480px) {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 `;
 
 export const SliderCont = styled.div`
-    width: 600px;
+    width: 50%;
     height: auto;
     overflow: hidden;
     position: relative;
@@ -65,7 +67,7 @@ export const SliderCont = styled.div`
 
 export const Slides = styled.div`
     display: flex;
-    transition: transform 0.5s ease-in-out; /* 부드러운 이동 효과 */
+    transition: transform 0.5s ease-in-out;
     @media (max-width: 480px) {
         width: 100%;
         height: auto;

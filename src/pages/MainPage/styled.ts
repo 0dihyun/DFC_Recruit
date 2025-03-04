@@ -55,7 +55,7 @@ export const RecruitCont = styled.p`
 `;
 
 export const DdayCont = styled.p`
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding-bottom: 20px;
     align-self: flex-start;
 

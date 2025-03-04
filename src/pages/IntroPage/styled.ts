@@ -27,24 +27,26 @@ export const SubCont = styled.div`
 `;
 
 export const CommentCont = styled.p`
-    font-size: 40px;
-
+    font-size: 2.5rem;
+    font-weight: 500;
     @media (max-width: 480px) {
         font-weight: 600;
-        font-size: 23px;
+        font-size: 1.5rem;
     }
 `;
 
 export const ClubNameCont = styled.p`
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 900;
 
     @media (max-width: 480px) {
-        font-size: 28px;
+        font-size: 1.5rem;
     }
 `;
 
 export const ImgCont = styled.img`
+    width: 50%;
+    height: auto;
     @media (max-width: 480px) {
         width: 100%;
         height: auto;
