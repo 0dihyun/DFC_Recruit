@@ -4,7 +4,7 @@ export const MainCont = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: calc(100vh - 70px);
+    height: 100vh;
     padding: 100px;
 
     @media (max-width: 480px) {
@@ -46,11 +46,32 @@ export const CommnetCont = styled.p`
 `;
 
 export const TitleCont = styled.p`
+    width: 12rem;
+    background-color: #1c334f;
+    color: #e1eaf4;
     font-weight: 700;
     font-size: 2.5rem;
 
     @media (max-width: 480px) {
         font-size: 1.5rem;
+    }
+`;
+
+export const WhatIsDFCTitle = styled.p`
+    width: 4rem;
+    background-color: #1c334f;
+    color: #e1eaf4;
+    font-weight: 700;
+    font-size: 1.5rem;
+
+    @media (max-width: 480px) {
+        font-size: 1.5rem;
+    }
+`;
+export const WhatIsDFCContents = styled.p`
+    font-size: 1rem;
+    @media (max-width: 480px) {
+        font-size: 0.9rem;
     }
 `;
 

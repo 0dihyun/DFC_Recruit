@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FAQContainer = styled.div`
     width: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
     overflow: hidden;
     @media (max-width: 480px) {
         margin-top: 2px;
@@ -13,13 +13,14 @@ export const Question = styled.div`
     display: flex;
     align-items: center;
     height: 70px;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 700;
 
     background-color: #b2bcc8;
     padding: 1rem;
     cursor: pointer;
     &:hover {
+        color: #e1eaf4;
         background-color: #4b6179;
     }
 `;

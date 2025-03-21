@@ -28,14 +28,15 @@ export const RegularActivityPage = () => {
         <S.MainCont>
             <S.SubCont>
                 <S.ExplainCont>
-                    <S.TitleCont>DFC?</S.TitleCont>
-                    <S.CommnetCont>DFC(디지털 포렌식 동아리)는 뭐시기 저시기</S.CommnetCont>
-                    <S.CommnetCont>이거저거 야매로다가 배우는 동아리 입니다.</S.CommnetCont>
+                    <S.WhatIsDFCTitle>DFC?</S.WhatIsDFCTitle>
+                    <S.WhatIsDFCContents>DFC(디지털 포렌식 동아리)는</S.WhatIsDFCContents>
+                    <S.WhatIsDFCContents>부원 여러분들이 관심있어 하는 분야를</S.WhatIsDFCContents>
+                    <S.WhatIsDFCContents>다같이 공부하고 실전에 적용시켜보는 동아리 입니다.</S.WhatIsDFCContents>
                 </S.ExplainCont>
                 <S.TitleCont>동아리 활동</S.TitleCont>
-                <S.CommnetCont>포렌식 툴 사용법, vscode 등등 이것저것 와이어샤크 뭐시기</S.CommnetCont>
-                <S.CommnetCont>포렌식 툴 사용법, vscode 등등 이것저것 와이어샤크 뭐시기</S.CommnetCont>
-                <S.CommnetCont>포렌식 툴 사용법, vscode 등등 이것저것 와이어샤크 뭐시기</S.CommnetCont>
+                <S.CommnetCont>포렌식을 하기 위한 프로그래밍 언어 공부하고</S.CommnetCont>
+                <S.CommnetCont>웹 사이트를 개발해보거나 CTF 문제도 풀어보고</S.CommnetCont>
+                <S.CommnetCont>배운 것을 토대로 다 같이 프로젝트도 진행하고</S.CommnetCont>
             </S.SubCont>
             <S.SliderCont>
                 <S.Slides

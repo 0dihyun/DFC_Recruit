@@ -57,5 +57,5 @@ export const NavLink = styled.li<{ active?: boolean }>`
 export const Separator = styled.p`
     margin: 0 10px;
     color: #ccc;
-    font-size: 15px;
+    font-size: 1rem;
 `;

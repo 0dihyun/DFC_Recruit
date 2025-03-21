@@ -1,5 +1,5 @@
 import * as S from "./styled";
-import DFC_LOGO from "../../assets/DFC_LOGO2.svg";
+import { DFC_LOGO_C } from "../../assets";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Header = ({ currentSectionId }: any) => {
@@ -19,7 +19,7 @@ const Header = ({ currentSectionId }: any) => {
         <S.Header>
             <S.LogoCont>
                 <a href='#' onClick={handleLogoClick}>
-                    <img src={DFC_LOGO} width={50} alt='DFC Logo' />
+                    <img src={DFC_LOGO_C} width={50} alt='DFC Logo' />
                 </a>
             </S.LogoCont>
             <S.NavCont>

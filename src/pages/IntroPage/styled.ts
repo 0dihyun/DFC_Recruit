@@ -4,7 +4,7 @@ export const MainCont = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: calc(100vh - 70px);
+    height: 100vh;
     padding: 100px;
 
     @media (max-width: 480px) {
@@ -28,7 +28,7 @@ export const SubCont = styled.div`
 
 export const CommentCont = styled.p`
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 700;
     @media (max-width: 480px) {
         font-weight: 600;
         font-size: 1.5rem;
@@ -36,6 +36,8 @@ export const CommentCont = styled.p`
 `;
 
 export const ClubNameCont = styled.p`
+    background-color: #1c334f;
+    color: #e1eaf4;
     font-size: 2.5rem;
     font-weight: 900;
 

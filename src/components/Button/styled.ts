@@ -4,18 +4,19 @@ export const MainCont = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 150px;
-    height: 45px;
-    border-radius: 15px;
+    width: 9rem;
+    height: 2.5rem;
+    border-radius: 10px;
     background-color: #1c334f;
 
     @media (max-width: 480px) {
-        height: 40px;
+        width: 8rem;
+        height: 2.5rem;
     }
 `;
 
 export const RecruitCont = styled.p`
-    font-weight: 500;
-    font-size: 18px;
-    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #e1eaf4;
 `;

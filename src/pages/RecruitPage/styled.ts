@@ -4,7 +4,7 @@ export const MainCont = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: calc(100vh - 70px);
+    height: 100vh;
     padding: 100px;
     gap: 20px;
 

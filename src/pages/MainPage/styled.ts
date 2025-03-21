@@ -5,7 +5,7 @@ export const MainCont = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    height: calc(100vh - 70px);
+    height: 100vh;
     padding: 100px;
 
     @media (max-width: 480px) {
@@ -44,6 +44,8 @@ export const SchoolNameCont = styled.p`
 `;
 
 export const RecruitCont = styled.p`
+    background-color: #1c334f;
+    color: #e1eaf4;
     font-weight: 700;
     font-size: 4rem;
     align-self: flex-start;
